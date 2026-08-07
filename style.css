@@ -9,13 +9,29 @@
 }
 
 body {
-    background-image: url(images/bgimage.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  color: #1a1a1a;
+  /* Dark tint overlay using 60% opacity black */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bgimage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff; /* Changed to white so text is readable on the dark background */
   padding: 0 5%;
+  position: relative;
+}
+
+/* Blur effect applied behind all page content */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: inherit;
+  filter: blur(8px); /* Change 8px to adjust blur intensity */
+  transform: scale(1.05); /* Scales slightly to prevent blurry white borders on edges */
+  z-index: -1;
 }
 
 /* Header & Nav */
