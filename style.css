@@ -9,6 +9,12 @@
 }
 
 body {
+    background-image: url("images\bgimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
   background-color: #fcfcfc;
   color: #1a1a1a;
   padding: 0 5%;
