@@ -9,7 +9,6 @@
 }
 
 body {
-  /* Dark tint overlay using 60% opacity black */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bgimage.png");
   background-size: cover;
   background-position: center;
@@ -20,7 +19,6 @@ body {
   position: relative;
 }
 
-/* Blur effect applied behind all page content */
 body::before {
   content: "";
   position: fixed;
