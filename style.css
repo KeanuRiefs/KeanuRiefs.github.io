@@ -49,13 +49,13 @@ header {
 header nav a {
   margin-left: 2rem;
   text-decoration: none;
-  color: #555;
+  color: #ffffff9d;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 header nav a:hover {
-  color: #000;
+  color: #ffffff;
 }
 
 /* Grid System */
@@ -104,5 +104,5 @@ header nav a:hover {
 
 .card-info p {
   font-size: 0.85rem;
-  color: #888;
+  color: #ffffff;
 }
