@@ -49,13 +49,13 @@ header {
 header nav a {
   margin-left: 2rem;
   text-decoration: none;
-  color: #ffffff9d;
+  color: #ffffff;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 header nav a:hover {
-  color: #ffffff;
+  color: #ffffff9b;
 }
 
 /* Grid System */
