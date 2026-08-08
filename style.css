@@ -114,3 +114,97 @@ header nav a:hover {
   font-size: 0.85rem;
   color: #ffffff;
 }
+
+/* About Page Main 3-Column Layout */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 Equal Columns */
+  gap: 3rem;
+  padding: 2rem 5.5% 5rem 5.5%;
+  color: #ffffff;
+}
+
+/* Left Column Styling */
+.profile-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subtitle {
+  color: #d1d5db;
+  font-weight: 600;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+}
+
+.bio-text {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sub-title with Logo Alignment */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-title h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Logo / Icon Placeholder Box */
+.title-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  /* Temporary background box if image is missing */
+  background-color: rgba(255, 255, 255, 0.15); 
+  border-radius: 6px;
+}
+
+/* Content Blocks in Middle/Right Columns */
+.section-block {
+  margin-bottom: 2.5rem;
+}
+
+.info-item {
+  line-height: 1.5;
+}
+
+.info-item .year {
+  display: block;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  margin-bottom: 0.25rem;
+}
+
+.info-item p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr; /* Stacks to 1 column on phones */
+  }
+}
