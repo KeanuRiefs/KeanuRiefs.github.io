@@ -90,6 +90,10 @@ header nav a:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
+.card:hover .card-info h3 {
+  text-decoration: underline;
+}
+
 /* Card Labels */
 .card-info {
   padding-top: 0.8rem;
