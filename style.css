@@ -117,29 +117,36 @@ header nav a:hover {
 
 /* About Page Main 3-Column Layout */
 /* About Page Main Container Box */
+/* About Page Main Container Box */
 .about-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 Equal Columns */
-  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding: 3rem;
   margin: 1rem auto 5rem auto;
-  max-width: 1200px; /* Keeps the card centered and nicely proportioned */
+  max-width: 1100px;
 
-  /* Glassmorphism / Frosted Box Styling */
-  background: rgba(0, 0, 0, 0.45); /* Dark semi-transparent background */
-  border: 1px solid rgba(255, 255, 255, 0.15); /* Soft glowing white border */
-  border-radius: 20px; /* Smooth rounded corners */
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Subtle drop shadow for depth */
-  
+  /* Frosted Glass Container */
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 
+/* TOP HERO: Picture + Bio Side-by-Side */
+.about-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
 .profile-frame {
-  width: 70%;
+  width: 220px; /* Fixed profile width */
+  flex-shrink: 0;
   aspect-ratio: 1 / 1;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -150,65 +157,81 @@ header nav a:hover {
   object-fit: cover;
 }
 
+.hero-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
 .subtitle {
-  color: #d1d5db;
+  color: #a1a1aa;
   font-weight: 600;
-  margin-top: -0.25rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .bio-text {
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
 }
 
-/* Sub-title with Logo Alignment */
+/* Subtle Divider Line */
+.section-divider {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 0.5rem 0;
+}
+
+/* BOTTOM SECTION: 2-Column Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
 .section-title {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
-.section-title h2 {
-  font-size: 1.25rem;
+.section-title h3 {
+  font-size: 1.15rem;
   font-weight: 700;
 }
 
-/* Logo / Icon Placeholder Box */
-.title-icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  /* Temporary background box if image is missing */
-  background-color: rgba(255, 255, 255, 0.15); 
-  border-radius: 6px;
-}
-
-/* Content Blocks in Middle/Right Columns */
-.section-block {
-  margin-bottom: 2.5rem;
-}
-
-.info-item {
-  line-height: 1.5;
+.info-block {
+  margin-bottom: 1.8rem;
 }
 
 .info-item .year {
   display: block;
   font-size: 0.85rem;
   color: #a1a1aa;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .info-item p {
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
-/* Responsive adjustment for small screens */
-@media (max-width: 900px) {
-  .about-container {
-    grid-template-columns: 1fr; /* Stacks to 1 column on phones */
+/* Responsive view for phones */
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-frame {
+    width: 180px;
+  }
+  .info-grid {
+    grid-template-columns: 1fr;
   }
 }
