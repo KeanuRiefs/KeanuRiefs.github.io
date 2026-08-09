@@ -116,18 +116,22 @@ header nav a:hover {
 }
 
 /* About Page Main 3-Column Layout */
+/* About Page Main Container Box */
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* 3 Equal Columns */
   gap: 3rem;
-  padding: 2rem 5.5% 5rem 5.5%;
-  color: #ffffff;
-}
+  padding: 3rem;
+  margin: 1rem auto 5rem auto;
+  max-width: 1200px; /* Keeps the card centered and nicely proportioned */
 
-/* Left Column Styling */
-.profile-col {
-  display: flex;
-  flex-direction: column;
+  /* Glassmorphism / Frosted Box Styling */
+  background: rgba(0, 0, 0, 0.45); /* Dark semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Soft glowing white border */
+  border-radius: 20px; /* Smooth rounded corners */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Subtle drop shadow for depth */
+  
+  color: #ffffff;
 }
 
 .profile-frame {
