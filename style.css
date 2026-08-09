@@ -131,7 +131,7 @@ header nav a:hover {
 }
 
 .profile-frame {
-  width: 100%;
+  width: 70%;
   aspect-ratio: 1 / 1;
   border-radius: 20px;
   overflow: hidden;
