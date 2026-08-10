@@ -349,13 +349,15 @@ header nav a:hover {
   font-family: inherit;
   font-size: 0.95rem;
   outline: none;
-  transition: border-color 0.2s, background 0.2s;
-}
+  
+  /* DISABLES DRAG RESIZING */
+  resize: none; 
 
-.form-group input:focus, 
-.form-group textarea:focus {
-  border-color: rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.12);
+  /* MAKES IT SCROLLABLE WHEN TEXT EXCEEDS THE HEIGHT */
+  max-height: 150px; /* Limits fixed visual height */
+  overflow-y: auto;  /* Adds a smooth scrollbar if text gets long */
+
+  transition: border-color 0.2s, background 0.2s;
 }
 
 /* Submit Button */
