@@ -691,3 +691,94 @@ header nav a:hover {
   background-color: #000000;
   display: block;
 }
+
+/* ==========================================================================
+   GAME DESIGN PAGE SPECIFIC STYLES
+   ========================================================================== */
+
+/* Flow Pills (Horizontal) */
+.flow-pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.flow-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.flow-arrow {
+  color: #a1a1aa;
+  font-size: 1.1rem;
+}
+
+/* Vertical Gameplay Flow Diagram */
+.vertical-flow-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+
+.flow-node {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.6rem 2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.flow-node.highlight-node {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.flow-down-arrow {
+  color: #a1a1aa;
+  font-size: 1.1rem;
+}
+
+/* System Tags */
+.system-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: #a1a1aa;
+  margin-top: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+/* Multi-CTA buttons */
+.nav-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
