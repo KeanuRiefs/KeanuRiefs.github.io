@@ -282,15 +282,10 @@ header nav a:hover {
   border-radius: 12px;
 }
 
-.card-icon {
-  font-size: 1.4rem;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
+.card-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .info-card h3 {
