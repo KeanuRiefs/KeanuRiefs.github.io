@@ -237,20 +237,28 @@ header nav a:hover {
 }
 
 /* Contact Page Main Container Box */
+/* 1. Force Side-by-Side 2-Column Grid for Contact Page */
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
   gap: 3rem;
   padding: 3rem;
   margin: 1rem auto 5rem auto;
   max-width: 1100px;
-
-  /* Matches About page frosted glass container */
   background: rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
   color: #ffffff;
+}
+
+/* 2. Turn Black SVG/PNG Icons White automatically! */
+.card-icon img,
+.card-icon svg {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Forces any dark icon to bright white */
 }
 
 .contact-info h2, .contact-form-wrapper h2 {
